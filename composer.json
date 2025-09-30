@@ -1,0 +1,40 @@
+{
+  "name": "lane4app/contract",
+  "version": "1.0.0",
+  "description": "This package provides central interfaces for a domain driven design approach",
+  "type": "library",
+  "license": "MIT",
+  "minimum-stability": "stable",
+  "authors": [
+    {
+      "name": "Rolf Beab",
+      "email": "rolf@lane4.digital"
+    }
+  ],
+  "require": {
+    "php": ">=8.1"
+  },
+  "require-dev": {
+    "phpstan/phpstan": "^2.0.4",
+    "squizlabs/php_codesniffer": "^3.11.2"
+  },
+  "autoload": {
+    "psr-4": {
+      "Lane4App\\Contract\\DotEnv\\": "src/dotenv/",
+      "Lane4App\\Contract\\ClassVersion\\": "src/classVersion/"
+    }
+  },
+  "scripts": {
+    "post-install-cmd": [
+      "echo '#!/usr/bin/env bash' > .git/hooks/pre-commit",
+      "echo 'bash ./support/pre-commit-hook.sh' >> .git/hooks/pre-commit",
+      "chmod +x .git/hooks/pre-commit"
+    ]
+  },
+  "homepage": "https://github.com/lane4app/contract",
+  "support": {
+    "issues": "https://github.com/lane4app/contract/issues",
+    "email": "rolf@lane4.digital"
+  },
+  "keywords": ["contract", "dotenv", "classversion", "interfaces", "Lane4App", "lane4 digital"]
+}
