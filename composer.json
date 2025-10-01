@@ -21,7 +21,8 @@
   "autoload": {
     "psr-4": {
       "Lane4App\\Contract\\DotEnv\\": "src/dotenv/",
-      "Lane4App\\Contract\\ClassVersion\\": "src/classVersion/"
+      "Lane4App\\Contract\\ClassVersion\\": "src/classVersion/",
+      "Lane4App\\Contract\\Factory\\": "src/factory/"
     }
   },
   "scripts": {
@@ -36,5 +37,5 @@
     "issues": "https://github.com/lane4app/contract/issues",
     "email": "rolf@lane4.digital"
   },
-  "keywords": ["contract", "dotenv", "classversion", "interfaces", "Lane4App", "lane4 digital"]
+  "keywords": ["contract", "dotenv", "classversion", "factory", "interfaces", "Lane4App", "lane4 digital"]
 }
